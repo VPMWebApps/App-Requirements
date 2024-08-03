@@ -3,8 +3,9 @@
 1. TimeTable app
 2. Donor database
 3. Alumni portal + database
-4. Career roadmap
-5. Student management
-6. Auto-generate forms
-7. Courses / internships / job portal - linked to alumni portal / student management ??
-8. CSR proposal & requirement database
+4. Marketing tool - Single click window to broadcast campaign message/image/video to all social media accounts 
+5. Career roadmap
+6. Student management
+7. Auto-generate form 10be for donors
+8. Courses / internships / job portal - linked to alumni portal / student management ??
+9. CSR proposal & requirement database
