@@ -1,1 +1,63 @@
+Mobile app , Browser UI, REST Api backend
+RBAC ( role based access control )
 
+Features:
+
+UI
+1. STUDENT:-
+1.a Screen with read-only access for students where students can view the timetable
+1.b coming soon
+
+2. ADMIN:-
+2.a Screen for Admin to modify the timetable - visually similar to student view but with buttons/features for crud operations
+2.b Screen for admin to add static master data, e.g professor profile, streams, subjects etc
+2.c Screen for admin to do the mapping , e.g stream - subject - batch etc..
+
+3. Management:
+3.a Screen to schedule committee meetings - visually similar to admin screen. 
+3.b Screen to add list of committees, email id of committee members
+3.c coming soon..
+
+4. Staff:
+4.a button to click absence. this will trigger auto-adjustment of timetable
+
+Functional description:
+
+Students
+1. Students should be able to view batch-wise timetable only. ROLE should contain batch info
+1.a coming soon
+
+Admin:-
+2.a 
+* Admin should be able to click on timeslot and add the subject, prof etc. 
+* There should be facility to update the lecture , i.e change the subject or prof or both
+* There should be feature to swap the lecture
+* Feature to cancel a lecture
+* Feature to declare emergeny holiday and consequently timetable should adjust
+* Feature to declare holiday type - festival/ public/ emergency/ vacation 
+* Feature to highlight exams / internals
+* To be discussed - Feature to schedule any other ad-hoc event , thereby trigerring re-adjustment of timetable. 
+For e.g guest lecture / guest visit etc - for full day , or specific time within the day
+* Feature to schedule weekend courses 
+
+2.b 
+* Feature to add static / master data which will be used in other screens - eg, prof details, stream details, subjects, classroom number etc
+
+2.c
+* Feautre to create valid mappings - which will be used the screen 2.a 
+
+3. Management:
+3.a 
+* Screen to schedule committee meetings - visually similar to admin screen. 
+* MC admin will be able to schedule various meetings. Members should get email + whatsapp notifications and reminders on an 
+adjustable frequency
+* Feature to schedule ad-hoc meetings with random members/staff. should send email + whatsapp notification
+
+3.b 
+* Screen to add list of committees, email id of committee members, map members to committe
+
+3.c coming soon..
+
+4. Staff:
+4.a 
+* button to click absence for particular lecture / full day. this will trigger auto-adjustment of timetable
