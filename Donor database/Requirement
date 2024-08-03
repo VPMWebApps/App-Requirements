@@ -1,8 +1,8 @@
 Database that contains contact details of donors
-Should be able to add whatsapp contacts to this app to broadcast messages
+Should be able to add whatsapp contacts to this app in order to be able to broadcast messages
 
 Individual donor
-1. Screen to add individual donor details and associated point of contact( if any )
+1. Screen to add individual donor details + contact info and associated point of contact( if any )
 
 CSR Donor
 2. Screen to add CSR donor details, organisation etc and also POC
