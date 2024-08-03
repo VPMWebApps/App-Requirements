@@ -1,0 +1,17 @@
+Database that contains contact details of donors
+Should be able to add whatsapp contacts to this app to broadcast messages
+
+Individual donor
+1. Screen to add individual donor details and associated point of contact( if any )
+
+CSR Donor
+2. Screen to add CSR donor details, organisation etc and also POC
+
+Single click window
+3.a In order to broadcast appeals/donation requests/ campaigns over whatsapp/email to individual donors
+3.b same for csr donors as well as pocs
+
+To be discussed - 
+payment gateway ?                                                                           
+Keep track of donations ? not sure ..                                  
+                                                                        
