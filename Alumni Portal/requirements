@@ -1,1 +1,9 @@
+Alumni portal is a pan-VPM tool for connecting with Alumni , i.e students who have studied in any of the VPM insitutions.
 
+Software requirements
+1. Database design - to store contact information ( with consent ) - email id / whatsapp number etc of students / parents as applicable.
+2. Facility to upload contact info from excel/csv/pdf to this database. 
+3. Job portal / internship portal when alumni / staff etc can type in opportunities for students/alumni . 
+4. Events page - facility to post events where alumni are welcome to attend
+5. Social media broadcasting - marketing tool project.
+( recommended to use marketing tool as a common tool to integrate with other applications )
