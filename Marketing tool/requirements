@@ -1,0 +1,8 @@
+This will be a common app for all other applications that will use social media broadcasting
+
+1. Feature to type in message + links + images + videos
+2. "Save and Broadcast" button to broadcast the above message -> before broacast post needs to be approved. admin should be able to view a list of posts pending for approval.
+3. Feature to select ( tick mark ) social media tools from a list of common popular tools like whatsapp / telegram/ fb / insta/ twitter where message will be broadcasted
+4. Feature to allow uploading messages to institutes social media accounts ( explore social media API )
+5. Posts to be broadcasted only after approval.
+6. Feature to allow sending posts to individuals via whatsapp / telegram. 
