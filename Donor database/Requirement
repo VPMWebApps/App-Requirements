@@ -9,7 +9,27 @@ CSR Donor
 
 Single click window
 3.a In order to broadcast appeals/donation requests/ campaigns over whatsapp/email to individual donors, csr donors, pocs 
-b. window should allow multi-select to select csr donors as well as individual donors
+b. Window should allow multi-select to select csr donors as well as individual donors
+
+Volunteering events
+4. Screen to list volunteering events where corporate volunteers can come down to VPM
+
+Requirements
+5.a Screen for requirements.
+1. title of requirement
+2. institution for which the requirement applies, i.e college, or school etc
+3. amount in INR
+4. requirement added by - name of person who adds the doc
+5. upload button for relevant documents. should allow uploading multiple documents
+6. uploaded by - name of person who uploads doc
+
+role based access
+1. upload and edit buttons only for admin users
+2. above button greyed out for guest users
+
+Only 2 types of users - admin and guest.
+
+
 
 To be discussed - 
 payment gateway ?                                                                           
