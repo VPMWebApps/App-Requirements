@@ -15,7 +15,8 @@ Volunteering events
 4. Screen to list volunteering events where corporate volunteers can come down to VPM
 
 Requirements
-5.a Screen for requirements.
+5.a Screen for requirements. 
+following columns must be present
 1. title of requirement
 2. institution for which the requirement applies, i.e college, or school etc
 3. amount in INR
@@ -26,9 +27,8 @@ Requirements
 role based access
 1. upload and edit buttons only for admin users
 2. above button greyed out for guest users
-
 Only 2 types of users - admin and guest.
-
+3. Filter button for each column
 
 
 To be discussed - 
