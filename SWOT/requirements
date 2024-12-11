@@ -3,7 +3,7 @@ It is a technique used to analyze these four aspects of a business or project to
 
 Requirement :
 
-1. SWOT screen. First column contains parameter name, for e.g, infrastructure, location, etc 
+1. Screen1 :Title - Current State. First column contains parameter name, for e.g, infrastructure, location, etc 
 2. 2nd 3rd, 4th, 5h column will be check box titled - great, good, average, poor
 3. there are multiple institutions under vpm - we will create such survey views for all institutions.
 HOME SCREEN will have institution NAME AND LOGO like we have on the college website.
