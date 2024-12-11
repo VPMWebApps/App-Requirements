@@ -1,1 +1,12 @@
+SWOT stands for Strengths Weakness Opportunity Threats
+It is a technique used to analyze these four aspects of a business or project to identify potential problems and positive forces.
 
+Requirement :
+
+1. SWOT screen. First column contains parameter name, for e.g, infrastructure, location, etc 
+2. 2nd 3rd, 4th, 5h column will be check box titled - great, good, average, poor
+3. there are multiple institutions under vpm - we will create such survey views for all institutions.
+HOME SCREEN will have institution NAME AND LOGO like we have on the college website.
+4. when we click on the logo it should navigate to the SWOT screen for that respective institution.
+5. admin should be able to add parameters and new columns with column names
+6. save button .
