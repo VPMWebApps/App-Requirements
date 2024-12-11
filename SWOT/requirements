@@ -3,10 +3,12 @@ It is a technique used to analyze these four aspects of a business or project to
 
 Requirement :
 
-1. Screen1 :Title - Current State. First column contains parameter name, for e.g, infrastructure, location, etc 
-2. 2nd 3rd, 4th, 5h column will be check box titled - great, good, average, poor
-3. there are multiple institutions under vpm - we will create such survey views for all institutions.
-HOME SCREEN will have institution NAME AND LOGO like we have on the college website.
-4. when we click on the logo it should navigate to the SWOT screen for that respective institution.
-5. admin should be able to add parameters and new columns with column names
-6. save button .
+1.Screen 1 : HOME SCREEN will have institution NAME AND LOGO like we have on the college website.
+2. Screen 2 :Title - Current State. First column contains parameter name, for e.g, infrastructure, location, etc 
+3. 2nd 3rd, 4th, 5h column will be check box titled - great, good, average, poor
+4. there are multiple institutions under vpm - we will create such survey views for all institutions.
+5. when we click on the logo it should navigate to the SWOT screen for that respective institution.
+6. admin should be able to add parameters and new columns with column names
+7. save button .
+
+
