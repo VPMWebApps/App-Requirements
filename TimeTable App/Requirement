@@ -32,12 +32,11 @@ Admin:-
 * Admin should be able to click on timeslot and add the subject, prof etc. 
 * There should be facility to update the lecture , i.e change the subject or prof or both
 * There should be feature to swap the lecture
-* Feature to cancel a lecture
+* Feature to cancel a lecture , To be discussed - Feature to schedule any other ad-hoc event , thereby trigerring re-adjustment of timetable. 
+For e.g guest lecture / guest visit etc - for full day , or specific time within the day
 * Feature to declare emergeny holiday and consequently timetable should adjust
 * Feature to declare holiday type - festival/ public/ emergency/ vacation 
 * Feature to highlight exams / internals
-* To be discussed - Feature to schedule any other ad-hoc event , thereby trigerring re-adjustment of timetable. 
-For e.g guest lecture / guest visit etc - for full day , or specific time within the day
 * Feature to schedule weekend courses 
 
 2.b 
