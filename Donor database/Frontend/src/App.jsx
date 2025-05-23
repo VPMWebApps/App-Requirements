@@ -2,6 +2,7 @@ import "./index.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import VolunteerEvents from "./pages/VolunteerEvents";
 import ResearchPrograms from "./pages/ResearchPrograms";
+import CSRRequirement from "./pages/CSRRequirement";
 
 function App() {
   return (
@@ -16,11 +17,15 @@ function App() {
             <button className="text-pink-600 font-semibold hover:underline">
               <Link to="/research">DONATE FOR RESEARCH</Link>
             </button>
+            <button className="text-pink-600 font-semibold hover:underline">
+              <Link to="/csr-requirement">CSR REQUIREMENT</Link>
+            </button>
           </div>
         </header>
         <Routes>
           <Route path="/" element={<VolunteerEvents />} />
           <Route path="/research" element={<ResearchPrograms />} />
+          <Route path="/csr-requirement" element={<CSRRequirement />} />
         </Routes>
       </div>
     </Router>

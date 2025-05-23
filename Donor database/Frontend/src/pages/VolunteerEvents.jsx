@@ -2,7 +2,7 @@ function VolunteerEvents() {
   return (
     <div className="p-6">
       <img
-        src=" https://i.imgur.com/4Q0x5gM.jpg"
+        src="Frontend/src/assets/sdgl_1.png "
         alt="Event Group"
         className="w-full max-h-[400px] object-cover rounded-xl mb-6"
       />
