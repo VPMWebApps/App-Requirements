@@ -1,16 +1,22 @@
 Skill tracker to track students skill progress through the year.
 
 1. Student view
-a. career roadmap - various career paths based on stream of study. for each path/profile - list of skills in progressive order - starting with foundation skills to advanced in a logical order.
-b. hackathons and coding competitions - local and global - facility to update registration link
-c. skill tracker - facility for student to select multiple career paths, and tick box each skill as he progresses upskilling over the course of the college.
-d. courses - similar structure as career roadmap - skill will be accompanied with links to multiple courses 
+a. READ-ONLY : career roadmap - various career paths based on stream of study. for each path/profile - list of skills in progressive order - starting with foundation skills to advanced in a logical order.
+b. READ-ONLY : hackathons and coding competitions - local and global 
+c. UPDATE-ONLY: skill tracker - facility for student to select multiple career paths, and tick box each skill as he progresses upskilling over the course of the college.
+d. READ-ONLY : courses - similar structure as career roadmap - skill will be accompanied with links to multiple courses 
 
-2. Admin view:
+2. Prof view
+a. all the above - same as student
+b. prof can search student profile via id. student cannot search other students ID .
+
+
+3. Admin view:
 a. admin should be able to CRUD all the above information.
 b. admin cannot tamper with student's profile / skill update. admin can only see student profile and skill progress.
-c. course link upload/ hackathon, coding competition link should be visible only after approval from MC - so approval mechanism required
+c. admin should be able to search student by unique id / roll number to see students profile and skill progress.
+d. course link upload/ hackathon, coding competition link should be visible only after approval from MC - so approval mechanism required
 
-3. MC view
+4. MC view
 a. single window for MC to approve course/ hackathon / coding competitoin link
 b. send automated email to MC email address along with college in-charge , chairman , Vice chairman etc
