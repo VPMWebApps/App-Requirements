@@ -1,1 +1,16 @@
+Skill tracker to track students skill progress through the year.
 
+1. Student view
+a. career roadmap - various career paths based on stream of study. for each path/profile - list of skills in progressive order - starting with foundation skills to advanced in a logical order.
+b. hackathons and coding competitions - local and global - facility to update registration link
+c. skill tracker - facility for student to select multiple career paths, and tick box each skill as he progresses upskilling over the course of the college.
+d. courses - similar structure as career roadmap - skill will be accompanied with links to multiple courses 
+
+2. Admin view:
+a. admin should be able to CRUD all the above information.
+b. admin cannot tamper with student's profile / skill update. admin can only see student profile and skill progress.
+c. course link upload/ hackathon, coding competition link should be visible only after approval from MC - so approval mechanism required
+
+3. MC view
+a. single window for MC to approve course/ hackathon / coding competitoin link
+b. send automated email to MC email address along with college in-charge , chairman , Vice chairman etc
