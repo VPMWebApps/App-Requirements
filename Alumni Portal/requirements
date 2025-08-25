@@ -9,3 +9,21 @@ Software requirements
 ( recommended to use marketing tool as a common tool to integrate with other applications )
 6. 3 roles - 1. admin, 2. student, 3. alumnus, 4. approver (for alumni pages )
 7. placement partners / List of companies
+
+
+Alumni portal home page - institution photo + name + logo + location
+
+1. Student view (all read only unless specified otherwise) 
+a. events at school/college - based on alumnus is part of which institution
+b. job/internship portal - search feature based on date 
+c. profile page - students contact info, all social media handles, whatsapp number etc 
+
+2. Admin view
+a. facility to add individual alumnus info / bulk upload alumni info from excel, search alumni, list of alumni based on batch (year, stream) 
+b. facility to upload events
+c. facility to broadcast messages on all social media
+d. facility to upload job opportunities 
+e. facility to upload internships
+
+3. Approver view
+a. all read-only. should be able to approve new jobs / internships/ events etc - everything goes via the approver
