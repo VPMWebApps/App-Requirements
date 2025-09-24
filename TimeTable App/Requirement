@@ -2,6 +2,7 @@ Mobile app , Browser UI, REST Api backend
 RBAC ( role based access control )
 
 Features:
+Homepage - Attendance . both student and staff attendance dashboard + leave count - subject wise ? day wise ? what is the attendance metric ?
 
 UI
 1. STUDENT:-
