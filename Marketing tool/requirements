@@ -1,8 +1,188 @@
-This will be a common app for all other applications that will use social media broadcasting
+ **Approval First, Then Broadcast**:
 
-1. Feature to type in message + links + images + videos
-2. "Save and Broadcast" button to broadcast the above message -> before broacast post needs to be approved. admin should be able to view a list of posts pending for approval.
-3. Feature to select ( tick mark ) social media tools from a list of common popular tools like whatsapp / telegram/ fb / insta/ twitter where message will be broadcasted
-4. Feature to allow uploading messages to institutes social media accounts ( explore social media API )
-5. Posts to be broadcasted only after approval.
-6. Feature to allow sending posts to individuals via whatsapp / telegram. 
+---
+
+### Refined Requirements
+
+1. **Message Creation**
+
+   * Users can create a post that includes:
+
+     * Text content
+     * Links
+     * Images (upload)
+     * Videos (upload or link)
+
+2. **Approval Workflow**
+
+   * After the post is created, it **must be approved** before being broadcasted.
+   * The post should be in a **pending approval** state.
+   * The post goes into an **approval queue** for the **admin** or designated approver(s) to review.
+   * Admins can either:
+
+     * Approve the post (and it gets queued for broadcasting)
+     * Reject the post (and notify the creator with feedback)
+
+3. **Post-Approval, Broadcast to Selected Platforms**
+
+   * **Broadcasting Options**:
+
+     * Once approved, the post can be broadcasted to selected platforms.
+     * Social media platforms include:
+
+       * WhatsApp
+       * Telegram
+       * Facebook
+       * Instagram
+       * Twitter
+   * The user should select the platforms via a simple UI with checkboxes (as before).
+
+4. **Broadcasting Groups**
+
+   * Posts can be broadcasted to predefined groups (or individuals) based on user types:
+
+     * Life Members
+     * CSR Donors/Volunteers/SPOCs
+     * Individual Donors
+     * Management
+   * Admins can select **groups** or **individuals** to send posts to. They can also create and manage these groups.
+
+5. **Approval Matrix**
+
+   * You need an **approval matrix** to define whether posts need:
+
+     * **Single Approver**: Only one admin needs to approve the post.
+     * **Multiple Approvers**: Multiple admins need to approve the post before broadcasting.
+   * **Roles** can be defined (e.g., Admin, Content Creator, Moderator) with different permissions regarding approval.
+
+6. **Time-based Broadcasting**
+
+   * Broadcasts can only happen during certain hours (e.g., business hours, daytime only).
+   * The time restriction will be enforced by checking the current time when broadcasting is triggered.
+
+7. **Post-Broadcast Monitoring & Logs**
+
+   * Once a post is broadcasted, logs and tracking (e.g., views, interactions) can be provided for reporting purposes.
+
+---
+
+### Revised Flow:
+
+1. **Create Post**
+
+   * The user creates a post with the ability to add text, links, images, and videos.
+
+2. **Submit for Approval**
+
+   * Once the post is ready, the user submits it for approval.
+   * The post enters the **approval queue** (visible to admins).
+
+3. **Approval Process**
+
+   * Admins review the post.
+   * They can approve or reject the post:
+
+     * **Approve**: The post enters a **broadcast queue** and is ready for broadcasting.
+     * **Reject**: The post is sent back to the creator with feedback for changes.
+
+4. **Broadcast Post**
+
+   * Once approved, the post can be broadcast to the selected platforms (WhatsApp, Telegram, Facebook, Instagram, etc.) and groups (Life Members, CSR donors, etc.).
+   * A time check is done to ensure the post is only broadcasted within the allowed timeframe (e.g., business hours).
+
+5. **Post Monitoring & Analytics**
+
+   * After broadcasting, the post's performance can be tracked (likes, shares, comments, etc.), and reports can be generated.
+
+---
+
+### Key Design and Implementation Ideas:
+
+1. **Approval Workflow**
+
+   * Use a **status field** for posts: `Pending Approval`, `Approved`, `Rejected`.
+   * Allow **admins** to filter posts by status (e.g., "Show only Pending", "Show only Approved").
+
+2. **Roles and Permissions**
+
+   * **Roles**: Admin, Content Creator, Moderator, etc.
+   * Different roles will have different permissions for approving, rejecting, or broadcasting content.
+
+   Example:
+
+   * **Content Creator**: Can create and submit posts for approval.
+   * **Admin/Moderator**: Can approve/reject posts.
+   * **Super Admin**: Can modify settings, add/remove users, and see detailed analytics.
+
+3. **Approval Matrix Configuration**
+
+   * A user-friendly configuration screen for admins to set whether posts need:
+
+     * **One Approver** or **Multiple Approvers** for each social media account (e.g., one admin for Twitter, three for Facebook).
+   * The system should support automatic approval if the user has permission, or it should require manual intervention.
+
+4. **Broadcast Scheduling & Time Restrictions**
+
+   * Implement a **time check** before broadcasting.
+   * Allow users to set "ideal broadcasting hours" during post creation or through an admin-configurable setting.
+
+5. **Post Groups & Individual Selection**
+
+   * Allow users to create and manage **custom broadcast groups**.
+   * These could be static (e.g., Life Members) or dynamic (e.g., create new groups based on certain criteria like donation level, user activity, etc.).
+   * You can store these in a relational database table and link users to these groups.
+
+6. **Post Templates & Content Management**
+
+   * Optionally, you could offer **content templates** or predefined post formats for common messages (e.g., event announcements, donation drives) to streamline content creation.
+
+7. **Analytics and Reporting**
+
+   * Once posts are broadcast, integrate **analytics tracking** to see:
+
+     * Engagement (likes, shares, comments)
+     * Reach (impressions, views)
+   * **Admin Dashboard**: To view post history, approval logs, and analytics.
+
+---
+
+### Tech Stack Recommendations:
+
+* **Frontend**:
+
+  * React.js or Vue.js (with a focus on dynamic content rendering and rich media input).
+  * Use **Quill.js** or **TinyMCE** for text editing.
+  * A simple checkbox list for platform selection.
+  * **Material-UI** for building admin interfaces (approval queues, logs).
+
+* **Backend**:
+
+  * **Node.js** with Express (or Python with Flask/Django) for handling RESTful APIs.
+  * Use **JWT** for user authentication and role-based access control (RBAC).
+  * **Celery** (Python) or **Bull** (Node.js) for task queues, especially if scheduling and approvals are involved.
+
+* **Database**:
+
+  * **PostgreSQL** (or MySQL) for managing posts, users, groups, approval workflows, and logs.
+  * **MongoDB** if you need more flexibility (e.g., for unstructured content).
+
+* **Social Media APIs**:
+
+  * Facebook Graph API, Twitter API, Telegram Bot API, WhatsApp Business API for posting and managing content on each platform.
+
+* **Cloud & Hosting**:
+
+  * **AWS** or **Google Cloud** for file storage (S3 for images/videos).
+  * Use **Heroku**, **Docker**, or **Kubernetes** for easy deployment and scaling.
+
+---
+
+### Next Steps:
+
+1. **Define Approval Workflow**: Implement the approval matrix (single or multiple approvers).
+2. **Role-Based Access Control (RBAC)**: Set up roles and permissions to manage what each user can do (create, approve, broadcast).
+3. **API Integrations**: Start integrating with the social media APIs for posting and managing content.
+4. **UI Design**: Work on the post creation, approval queue, and group management interfaces.
+5. **Testing**: Implement tests for the approval and broadcasting workflow to ensure a smooth experience for users and admins.
+
+Does this structure make more sense for your application? Let me know if you need to adjust any part of the process or dive into specifics!
