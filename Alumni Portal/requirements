@@ -1,37 +1,101 @@
-Alumni portal is a pan-VPM tool for connecting with Alumni , i.e students who have studied in any of the VPM insitutions.
+1. Software Requirements
+1.1 Database & Contact Management
 
-Software requirements
-1. Database design - to store contact information ( with consent ) - email id / whatsapp number etc of students / parents as applicable.
-2. Facility to upload contact info from excel/csv/pdf to this database. 
-3. Job portal / internship portal when alumni / staff etc can type in opportunities for students/alumni - like facebook timeline ? - filter posts by year / month / date
-4. Events page - facility to post events where alumni are welcome to attend
-5. Social media broadcasting - marketing tool project.
-( recommended to use marketing tool as a common tool to integrate with other applications )
-6. 3 roles - 1. admin, 2. student, 3. alumnus, 4. approver (for alumni pages )
-7. placement partners / List of companies
+Design a database to store contact information with explicit consent.
 
+Fields include: email ID, mobile/WhatsApp number, social media handles, and parent contact details wherever applicable.
 
-Alumni portal home page - institution photo + name + logo + location
+Ability to upload contact data in bulk using Excel / CSV / PDF files.
 
-1. Student view (all read only unless specified otherwise) 
-a. events at school/college - based on alumnus is part of which institution
-b. job/internship portal - search feature based on date 
-c. profile page - students contact info, all social media handles, whatsapp number etc 
+1.2 Job & Internship Portal
 
-2. Admin view
-a. facility to add individual alumnus info / bulk upload alumni info from excel, search alumni, list of alumni based on batch (year, stream) 
-b. facility to upload events
-c. facility to broadcast messages on all social media
-d. facility to upload job opportunities 
-e. facility to upload internships
+Alumni, staff, and partners can post job or internship opportunities.
 
-3. Approver view
-a. all read-only. should be able to approve new jobs / internships/ events etc - everything goes via the approver
+Interface similar to a timeline feed.
 
+Ability to filter posts by year, month, and date.
 
-4. Newsletter 
-a. All news achievemtns and other updates. VPM alumni should be able to post their ads and publicity. think about this.( Monetization ? )
+Search functionality for students and alumni.
 
-5. Global spocs - alumni connection 
-a. nominate and highlight volunteer co ordinator based on location - country state district city town etc .. as per data available
-b. filter and search option
+1.3 Events Module
+
+A dedicated events page where institutions can publish upcoming events.
+
+Alumni can view events relevant to their respective institutions.
+
+1.4 Social Media Broadcasting
+
+A unified marketing/broadcasting tool to push announcements to all social media channels.
+
+Recommended as a common marketing module to integrate with other VPM applications.
+
+1.5 User Roles
+
+Admin
+
+Student
+
+Alumnus
+
+Approver (specific to approving alumni-related content)
+
+1.6 Placement Partners
+
+Maintain a list of partner companies and placement collaborators.
+
+2. Alumni Portal – Home Page
+
+Display institution photo, name, logo, and location.
+
+Multi-institution support.
+
+3. User Views / Features
+3.1 Student View (Read-only unless specified)
+
+View events from their institution.
+
+Access job & internship listings with search by date.
+
+Personal profile page with:
+
+Contact details
+
+Social media links
+
+WhatsApp number, etc.
+
+3.2 Admin View
+
+Add or edit individual alumnus profiles.
+
+Bulk upload alumni data using Excel.
+
+Search and filter alumni by batch (year, stream, department).
+
+Upload and manage events.
+
+Post job opportunities or internships.
+
+Social media broadcast interface for cross-platform announcements.
+
+3.3 Approver View
+
+Read-only access plus approval rights.
+
+All newly added jobs, internships, events, and announcements must be approved before going live.
+
+4. Newsletter Module
+
+A central space for achievements, news, and major updates across all VPM institutions.
+
+Alumni should be able to post advertisements or promotional content.
+
+Optional monetization model to be explored (subscription, paid promotion slots, etc.).
+
+5. Global SPOCs (Alumni Connect)
+
+Ability to nominate and highlight volunteer coordinators based on geography:
+
+Country → State → District → City → Town
+
+Search and filter SPOCs based on location and available data.
