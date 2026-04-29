@@ -18,3 +18,4 @@ UI
 2. alignment and layout consistency
 3. spacing consitency
 4. button sizing
+5. header and footer , contact info, location
