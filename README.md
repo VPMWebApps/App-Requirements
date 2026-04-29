@@ -9,3 +9,12 @@
 7. Auto-generate form 10be for donors
 8. Courses / internships / job portal - linked to alumni portal / student management ??
 9. Document collection - fee payment automation. Process automation ???
+
+
+BEST PRACTICTICES 
+
+UI
+1. font sizing and consistency
+2. alignment and layout consistency
+3. spacing consitency
+4. button sizing
