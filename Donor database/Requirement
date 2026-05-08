@@ -1,18 +1,38 @@
-Database that contains contact details of donors
-Should be able to add whatsapp contacts to this app in order to be able to broadcast messages
+1. The primary purpose of this app is to collect donations for a range of institutions and a variety of requirements.
+2. The app will have 4 roles -  guest, admin, staff, management. 
+3. The app will have Database that contains contact details of donors
+4. Donors can be csr donors, or individuals, or other institutioal donor or charitable trusts or NGOs
+5. There will be a login/registration page for admin , guests and management. 
+6. There will be separate views for admin, management and guests.
+7. admin can see all screens. so can management. admin can do all crud operations. management can only add donor information
+8. Should be able to add whatsapp contacts of all donors to this app in order to be able to broadcast messages
+9. all types of donors should have atleast 1 whatsapp/arrattai contact number and optional email id
+10. facillity to add multiple whatsapp contact numbers for all types of donors .  
+11. All types of donors should have the following information
+a. Referral - who referred them to VPM ? ( full name and whatsapp number of the person who referred them )
+b. name of institution ( if not individual donor ) , location of institution 
+c. CSR SPOC name and contact information - email whatsapp number  ( in case of CSR donor )
+d. Separate screens for donors- individual , CSR , institutional ( other trusts or ngos etc that donate out of goodwill without csr diligence provess)
 
-Individual donor
-1. Screen to add individual donor details + contact info and associated point of contact( if any )
+12. CSR donors screens should have an additional column - Due diligence process
+a. due dilgence status will have the following values - not started( pending approval from General Secretary ) , in progress, completed
+b. another 2 columns -1.  volunteering process started ? - YES/NO/ Not required ( default blank ) 
+                       2. donation received ? - YES/NO/Not required
+c. admin should have option to change the status. popup should suffice.
+d. another popup for detail view of status - it should show dates when the status changed , along with the status
+e. Periodic reminders every monday , wednesday and thursday until volunteering started. Again reminder for donations after 1 year of volunteeering completion
+f. reminders will be via email, whatsapp and notifiction on homepage. reminder logic to be customizable. another admin screen for this.
 
-CSR Donor
-2. Screen to add CSR donor details, organisation etc and also POC
+13. Donate for research can be a separate screen. this should have a row which has the project title and uploadded by. also upload button for a pdf. and donate button
+14. Donate for robotics and drones can be a separate screen 
+15. Donate for coding club can be a separate screen. points 13 14 and 15 will be similar structure.
 
 Single click window
 3.a In order to broadcast appeals/donation requests/ campaigns over whatsapp/email to individual donors, csr donors, pocs 
-b. Window should allow multi-select to select csr donors as well as individual donors
+b. Window should allow multi-select to select individual donors and non individual donors 
 
 Volunteering events
-4. Screen to list volunteering events where corporate volunteers can come down to VPM
+4. Screen to list volunteering events where corporate volunteers can come down to VPM. allow broadcast.
 
 Requirements
 5.a Screen for requirements. 
@@ -20,18 +40,23 @@ following columns must be present
 1. title of requirement
 2. institution for which the requirement applies, i.e college, or school etc
 3. amount in INR
-4. requirement added by - name of person who adds the doc
+4. requirement added by - name of person who adds the requirement
 5. upload button for relevant documents. should allow uploading multiple documents
 6. uploaded by - name of person who uploads doc
 
 role based access
-1. upload and edit buttons only for admin users
+1. upload button, add requirement option for all users except guest.
 2. above button greyed out for guest users
-Only 2 types of users - admin and guest.
 3. Filter button for each column
+
+Requirements screen should also have segregation of requirements based on institution and SDG ( sustainability development goal )
+When i click on institution, it should list down all requirements along with the SDG numbers
+when i click on SDG number it should show all institutions for the sdg
+allow selecting multiple sdgs/multiple institutions at once.
+
 
 
 To be discussed - 
 payment gateway ?                                                                           
 Keep track of donations ? not sure ..                                  
-                                                                        
+broadcasting donation requests to everyone associate with VPM schools and colleges.                                                                        
